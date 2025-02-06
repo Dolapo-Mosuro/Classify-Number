@@ -7,6 +7,12 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
+app.get("/", (req: Request, res: Response) => {
+	res.send(
+		"Welcome to the Number Classification API! Use /api/classify-number/:number to classify a number."
+	);
+});
+
 app.get(
 	"/api/classify-number/:number",
 	async (req: Request, res: Response): Promise<void> => {
