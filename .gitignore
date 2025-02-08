@@ -1,0 +1,21 @@
+# Sensitive data
+.env
+secrets/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# System files
+.DS_Store
+# Ignore a specific file
+secrets.txt
+
+# Ignore a directory
+venv/
+node_modules/
+
+# Ignore all files with a specific extension
+*.log
